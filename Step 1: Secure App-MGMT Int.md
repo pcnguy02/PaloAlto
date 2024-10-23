@@ -48,3 +48,7 @@
   ~~~
   >scp export configuration to user@host:/host/directory from running-config.xml
   ~~~
+
+# Step 2: Liencse Firewall
+# Step 3: 
+- Setup dynamic updates to retrieve current m
