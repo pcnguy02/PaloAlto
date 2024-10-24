@@ -51,4 +51,19 @@
 
 # Step 2: Liencse Firewall
 # Step 3: 
-- Setup dynamic updates to retrieve current m
+- Setup dynamic updates to retrieve current malware sigs
+# Step 4: Configure network, deploy FW, configure security policies and assign security profiles to sec policies.
+Network Deployment Options: 
+1, Virtual Wire
+- Rapid deployment
+- Con: Only provides North-South protection (can't segment internal traffic into multiple internal zones)
+- Configure inbound/outbound block rule to block unknown bad urls
+- Configure inbound rules for scored services
+   - Be specific and allow apps and destination IP addresses
+- Configure outbound rules
+    - Make rules specific
+    - Only allow outbound traffic from specific IP addresses that are absolutely necessary.
+- Assign security profiles to all allow rules
+   - FW will not block malware without Security profiles assigned to security policies
+2, Layer 2
+3, Layer 3
